@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #F2F2F2;
+            color: #1b1b1b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Baloo 2", sans-serif;
+            font-weight: 700;
+        }
+        .container {
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            border: 1px solid #EBEBEB;
+            width: 356px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+            padding: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+{{ template "content" . }}
+</body>
