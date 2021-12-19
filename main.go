@@ -17,6 +17,8 @@ func parseEnvVariable(name, fallback string) string {
 
 func main() {
 	r := gin.New()
+	r.Use(gin.Logger())
+	r.Use(gin.Recovery())
 	r.HTMLRender = ginview.New(goview.Config{
 		Root:         "views",
 		Extension:    ".gohtml",
